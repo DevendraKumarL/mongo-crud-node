@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mongodb-node App</title>
+</head>
+<body>
+	<h2 id='message'></h2>
+	<h3>mongodb person collection results</h3>
+	<table border="1" cellpadding="2px" cellspacing="1px">
+		<thead>
+			<th>name</th>
+			<th>age</th>
+		</thead>
+		<tbody>
+			<% for (var i = 0; i < data.length; i++) { %>
+				<tr>
+					<td><%= data[i]['name'] %></td>
+					<td><%= data[i]['age'] %></td>
+				</tr>
+			<% } %>
+		</tbody>
+	</table>
+</body>
+	<script type="text/javascript" src="js/client.js"></script>
+</html>
